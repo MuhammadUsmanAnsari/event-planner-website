@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+// bootstrap javascript
+import 'bootstrap/dist/js/bootstrap.bundle';
+//routes
+import Routes from 'routes/Routes';
+//react toastify 
+import { ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css"
+import AuthContextProvider from 'context/AuthContext';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthContextProvider>
+        <Routes />
+      </AuthContextProvider>
+
+      {/* react toastify */}
+      <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+
     </div>
   );
 }

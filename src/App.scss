@@ -1,0 +1,19 @@
+$info:#6b76ff;
+@import "~bootstrap/scss/bootstrap.scss";
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+main{
+    flex: 1 0 auto;
+}
+.top-space{
+    margin-top: 100px !important;
+}
+.paragraphs{
+    text-indent: 4%;
+    text-align: justify;
+}

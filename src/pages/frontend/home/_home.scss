@@ -1,0 +1,23 @@
+$info:#6b76ff;
+
+.hero-section {
+    background-image: url("../../../assets/pictures/danny-howe-gwQAhisLnRA-unsplash.jpg");
+    min-height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-space {
+    .row {
+        .col{
+            .card {
+                height: 247px;
+            }
+        }
+        .col:hover .card{
+            background-color:$info ;
+            color: white;
+        }
+    }
+
+}
